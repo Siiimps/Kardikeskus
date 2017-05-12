@@ -1,0 +1,11 @@
+C:\Users\Kasutaja\documents\visual studio 2017\Projects\Kardikeskus\Kardikeskus\bin\Release\Kardikeskus.exe
+C:\Users\Kasutaja\documents\visual studio 2017\Projects\Kardikeskus\Kardikeskus\bin\Release\Kardikeskus.pdb
+C:\Users\Kasutaja\documents\visual studio 2017\Projects\Kardikeskus\Kardikeskus\bin\Release\Kardikeskus.xml
+C:\Users\Kasutaja\documents\visual studio 2017\Projects\Kardikeskus\Kardikeskus\bin\Release\MySql.Data.xml
+C:\Users\Kasutaja\documents\visual studio 2017\Projects\Kardikeskus\Kardikeskus\obj\Release\Kardikeskus.Form1.resources
+C:\Users\Kasutaja\documents\visual studio 2017\Projects\Kardikeskus\Kardikeskus\obj\Release\Kardikeskus.Resources.resources
+C:\Users\Kasutaja\documents\visual studio 2017\Projects\Kardikeskus\Kardikeskus\obj\Release\Kardikeskus.vbproj.GenerateResource.Cache
+C:\Users\Kasutaja\documents\visual studio 2017\Projects\Kardikeskus\Kardikeskus\obj\Release\Kardikeskus.exe
+C:\Users\Kasutaja\documents\visual studio 2017\Projects\Kardikeskus\Kardikeskus\obj\Release\Kardikeskus.xml
+C:\Users\Kasutaja\documents\visual studio 2017\Projects\Kardikeskus\Kardikeskus\obj\Release\Kardikeskus.pdb
+C:\Users\Kasutaja\Documents\Visual Studio 2017\Projects\Kardikeskus\Kardikeskus\obj\Release\Kardikeskus.vbprojResolveAssemblyReference.cache
