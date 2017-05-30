@@ -355,7 +355,7 @@ Public Class Form1
         mySqlConn = New MySqlConnection With {
             .ConnectionString = sqlConnectString
         }
-
+        Label_Version.Text = "Version: " & Application.ProductVersion.ToArray()
         EDButtons(False)
 		laeTabel("", "")
         Logi("Open", "", "", "", "", "")

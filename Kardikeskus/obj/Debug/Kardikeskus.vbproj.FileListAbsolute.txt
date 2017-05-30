@@ -9,3 +9,7 @@ c:\users\kasutaja\documents\visual studio 2017\Projects\Kardikeskus\Kardikeskus\
 c:\users\kasutaja\documents\visual studio 2017\Projects\Kardikeskus\Kardikeskus\obj\Debug\Kardikeskus.xml
 c:\users\kasutaja\documents\visual studio 2017\Projects\Kardikeskus\Kardikeskus\obj\Debug\Kardikeskus.pdb
 c:\users\kasutaja\documents\visual studio 2017\Projects\Kardikeskus\Kardikeskus\bin\Debug\MySql.Data.xml
+C:\Users\Kasutaja\Documents\Visual Studio 2017\Projects\Kardikeskus\Kardikeskus\bin\Debug\Kardikeskus.exe.manifest
+C:\Users\Kasutaja\Documents\Visual Studio 2017\Projects\Kardikeskus\Kardikeskus\bin\Debug\Kardikeskus.application
+C:\Users\Kasutaja\Documents\Visual Studio 2017\Projects\Kardikeskus\Kardikeskus\obj\Debug\Kardikeskus.exe.manifest
+C:\Users\Kasutaja\Documents\Visual Studio 2017\Projects\Kardikeskus\Kardikeskus\obj\Debug\Kardikeskus.application

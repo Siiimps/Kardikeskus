@@ -72,8 +72,9 @@ Partial Class Form1
         Me.AvaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.TextBox_OtsiTabel = New System.Windows.Forms.TextBox()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label_Version = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
@@ -575,15 +576,15 @@ Partial Class Form1
         Me.TextBox_OtsiTabel.Size = New System.Drawing.Size(100, 20)
         Me.TextBox_OtsiTabel.TabIndex = 17
         '
-        'Label12
+        'Label_Version
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.Label12.Location = New System.Drawing.Point(865, 554)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(107, 13)
-        Me.Label12.TabIndex = 18
-        Me.Label12.Text = "Autor: Siim Lehismets"
+        Me.Label_Version.AutoSize = True
+        Me.Label_Version.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.Label_Version.Location = New System.Drawing.Point(891, 554)
+        Me.Label_Version.Name = "Label_Version"
+        Me.Label_Version.Size = New System.Drawing.Size(81, 13)
+        Me.Label_Version.TabIndex = 18
+        Me.Label_Version.Text = "Version: 0.0.0.0"
         '
         'Label13
         '
@@ -595,13 +596,24 @@ Partial Class Form1
         Me.Label13.TabIndex = 14
         Me.Label13.Text = "Otsi eesnime"
         '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.Label14.Location = New System.Drawing.Point(778, 554)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(107, 13)
+        Me.Label14.TabIndex = 19
+        Me.Label14.Text = "Autor: Siim Lehismets"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(984, 582)
+        Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.Label_Version)
         Me.Controls.Add(Me.TextBox_OtsiTabel)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox2)
@@ -681,6 +693,7 @@ Partial Class Form1
 	Friend WithEvents TextBox_OtsiTabel As TextBox
 	Friend WithEvents LogidToolStripMenuItem As ToolStripMenuItem
 	Friend WithEvents AvaToolStripMenuItem As ToolStripMenuItem
-	Friend WithEvents Label12 As Label
+	Friend WithEvents Label_Version As Label
 	Friend WithEvents Label13 As Label
+    Friend WithEvents Label14 As Label
 End Class
