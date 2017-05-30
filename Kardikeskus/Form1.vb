@@ -5,7 +5,7 @@ Public Class Form1
 
     Dim mySqlConn As MySqlConnection
     Dim sqlConnectString As String = "server=localhost;userid=root;password=;database=kardikeskus"
-    'Build sqlConnectString = "server=localhost;userid=root;password=npUka91cCDwM5OjR;database=kardikeskus"
+    'Dim sqlConnectString As String = "server=localhost;userid=root;password=npUka91cCDwM5OjR;database=kardikeskus"
     Dim COMMAND As MySqlCommand
 
 	Private Sub otsiKlient(kood As String)
@@ -292,10 +292,10 @@ Public Class Form1
 			mySqlConn.Open()
 			Dim Query As String
 			If (kood = "") Then
-				Query = "SELECT kood as 'Kood',enimi as 'Eesnimi',pnimi as 'Perenimi',epost as 'E-post',telefon as 'Telefon',isikukood as 'Isikukood',uudiskiri as 'Uudiskiri',soidud as 'S6idud kokku',boonus as 'Boonuspunkte' FROM kardikeskus.kliendid"
-			Else
-				Query = "SELECT kood,enimi,pnimi,epost,telefon,isikukood,uudiskiri,soidud,boonus FROM kardikeskus.kliendid WHERE kood='" & kood & "'"
-			End If
+                Query = "SELECT id as 'Nr',kood as 'Kood',enimi as 'Eesnimi',pnimi as 'Perenimi',epost as 'E-post',telefon as 'Telefon',isikukood as 'Isikukood',uudiskiri as 'Uudiskiri',soidud as 'S6idud kokku',boonus as 'Boonuspunkte' FROM kardikeskus.kliendid"
+            Else
+                Query = "SELECT id,kood,enimi,pnimi,epost,telefon,isikukood,uudiskiri,soidud,boonus FROM kardikeskus.kliendid WHERE kood='" & kood & "'"
+            End If
 			'Query = "SELECT kood,enimi,pnimi,epost,telefon,isikukood,uudiskiri,soidud,boonus FROM kardikeskus.kliendid"
 			COMMAND = New MySqlCommand(Query, mySqlConn)
 			SDA.SelectCommand = COMMAND
@@ -313,8 +313,16 @@ Public Class Form1
 		Catch ex As Exception
 			MessageBox.Show(ex.Message)
 		Finally
-			mySqlConn.Close()
-		End Try
+            mySqlConn.Close()
+            'DataGridView Tulpade Laiused
+            '0 = id, 1 = kood, 2 = enimi, 3 = pnimi, 4 = epost, 5 = telefon, 6 = isikukood, 7 = uudiskiri, 8 = soidud, 9 = boonus
+            DataGridView1.Columns(0).Width = 40
+            DataGridView1.Columns(1).Width = 60
+            DataGridView1.Columns(4).Width = 120
+            DataGridView1.Columns(7).Width = 80
+            DataGridView1.Columns(8).Width = 80
+            DataGridView1.Columns(9).Width = 80
+        End Try
 	End Sub
 
 	Private Sub Logi(type As String, message As String, action As String, kood As String, soidud As String, boonus As String)
@@ -350,14 +358,14 @@ Public Class Form1
 
         EDButtons(False)
 		laeTabel("", "")
-		Logi("Open", "", "", "", "", "")
-		Try
+        Logi("Open", "", "", "", "", "")
+        Try
 
-		Catch ex As Exception
-			MessageBox.Show(ex.Message)
-			Logi("Error", ex.Message, "Load", "", "", "")
-		Finally
-			mySqlConn.Dispose()
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+            Logi("Error", ex.Message, "Load", "", "", "")
+        Finally
+            mySqlConn.Dispose()
 		End Try
 
 	End Sub
@@ -646,16 +654,16 @@ Public Class Form1
 	End Sub
 
 	Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-		If e.RowIndex >= 0 And e.ColumnIndex = 0 Then
-			Try
-				Dim row As DataGridViewRow
-				row = Me.DataGridView1.Rows(e.RowIndex)
-				otsiKlient(row.Cells("kood").Value.ToString)
-			Catch ex As Exception
-				MessageBox.Show(ex.Message)
-			End Try
-		End If
-		TextBox_Otsi.Select()
+        If e.RowIndex >= 0 And e.ColumnIndex = 1 Then
+            Try
+                Dim row As DataGridViewRow
+                row = Me.DataGridView1.Rows(e.RowIndex)
+                otsiKlient(row.Cells("kood").Value.ToString)
+            Catch ex As Exception
+                MessageBox.Show(ex.Message)
+            End Try
+        End If
+        TextBox_Otsi.Select()
 	End Sub
 
 	Private Sub TextBox_OtsiTabel_TextChanged(sender As Object, e As EventArgs) Handles TextBox_OtsiTabel.TextChanged
